@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Save the worls landing page</title>
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+
+  <body>
+    <section>
+      <header>
+        <a href="#" class="logo">World</a>
+        <div class="toggle"></div>
+      </header>
+      <div class="bg">
+        <img src="/img/bg.jpg" alt="bg" />
+      </div>
+
+      <div class="bird">
+        <img src="/img/bird.png" alt="bird" />
+      </div>
+
+      <div class="content">
+        <h2>We can save The<br /><span>Earth</span></h2>
+        <p>
+          Lorem ipsum dolor sit amet. In blanditiis rerum eum ratione Quis sit
+          quos explicabo est nisi dignissimos. Et dolorem quas ex consequatur
+          porro est autem labore qui ullam consequatur. Non placeat
+          reprehenderit est odio dolor non harum dignissimos ab veniam repellat
+          quo autem perferendis 33 explicabo quia eos perspiciatis iure. Sed
+          quos neque ea nihil quis aut voluptas repudiandae.
+        </p>
+        <a href="#">Join Us</a>
+      </div>
+      <ul class="sci">
+        <li><a href="#"><img src="/img/facebook.png" alt=""></a></li>
+        <li><a href="#"><img src="/img/twitter.png" alt=""></a></li>
+        <li><a href="#"><img src="/img/instagram.png" alt=""></a></li>
+      </ul>
+
+      <div class="textBlocks">
+        <div class="blocks">
+            <h3>Defenders os Earth</h3>
+            <p>Lorem ipsum dolor sit amet. In blanditiis rerum eum ratione Quis sit
+                quos explicabo est nisi dignissimos. Et dolorem quas ex consequatur
+                porro est autem labore qui ullam consequatur. Non placeat
+                reprehenderit est odio dolor non harum dignissimos ab veniam repellat
+                quo autem perferendis 33 explicabo quia eos perspiciatis iure. Sed
+                quos neque ea nihil quis aut voluptas repudiandae.</p>
+        </div>
+        <div class="blocks">
+            <h3>How to save Water</h3>
+            <p>Lorem ipsum dolor sit amet. In blanditiis rerum eum ratione Quis sit
+                quos explicabo est nisi dignissimos. Et dolorem quas ex consequatur
+                porro est autem labore qui ullam consequatur. Non placeat
+                reprehenderit est odio dolor non harum dignissimos ab veniam repellat
+                quo autem perferendis 33 explicabo quia eos perspiciatis iure. Sed
+                quos neque ea nihil quis aut voluptas repudiandae.</p>
+        </div>
+      </div>
+    </section>
+    <script type="text/javascript">
+        document.addEventListener("mousemove", function(e){
+            const bg = document.querySelector('.bg');
+            const bird = document.querySelector('.bird');
+            const content = document.querySelector('.content');
+
+
+            
+            bg.style.height = 100 + e.pageX/100 + '%';
+            bg.style.width = 100 + e.pageY/100 + '%';
+
+            bird.style.right = e.pageY/2 + 'px';
+            
+        })
+    </script>
+  </body>
+</html>
